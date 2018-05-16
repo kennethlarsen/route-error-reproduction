@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('reports');
+
+  // This is causing the error
+  this.route('reports/:report_id');
 });
 
 export default Router;
